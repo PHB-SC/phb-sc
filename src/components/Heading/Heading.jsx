@@ -21,7 +21,7 @@ const Heading = () => {
         </div>
         <div className="flex flex-col gap-3">
           <h1 className="text-lg md:text-2xl text-white font-bold uppercase">
-            {`"Saya sangat senang" - reaksi Haikal 'CINGE' Prawira setelah bermain
+            {`"Saya sangat senang" - reaksi Haikal 'CINGE' Yudha Prawira setelah bermain
             dalam debut pertamanya di Pemuda Harapan Bangsa Sports Club`}
           </h1>
           <p className="text-white font-light text-sm md:text-base">
