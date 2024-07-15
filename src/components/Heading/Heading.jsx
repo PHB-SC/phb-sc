@@ -25,7 +25,7 @@ const Heading = () => {
             dalam debut pertamanya di Pemuda Harapan Bangsa Sports Club`}
           </h1>
           <p className="text-white font-light text-sm md:text-base">
-            {`Haikal 'CINGE' Prawira merasa sangat gembira setelah permainan
+            {`Haikal 'CINGE' Yudha Prawira merasa sangat gembira setelah permainan
             pertamanya untuk PHB SC meski ia mengalami kelelahan pegal linu,
             asam urat, mual mual. tetapi menurut dia pertandingan tadi sangat
             menarik`}
