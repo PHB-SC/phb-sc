@@ -10,9 +10,10 @@ const GalleryDetail = () => {
 
   const selectedData = GalleryData.find((item) => item.id === id);
 
-  const [selectedImage, setSelectedImage] = React.useState(
-    selectedData.images[0],
-  );
+  const [selectedImage, setSelectedImage] = React.useState({
+    image: selectedData.images[0],
+    index: 0,
+  });
 
   return (
     <div className="h-screen">
@@ -21,7 +22,7 @@ const GalleryDetail = () => {
         <div className="flex flex-col bg-blue-300 w-full md:w-[70%]">
           <div className="h-[300px] md:h-[525px]">
             <img
-              src={selectedImage}
+              src={selectedImage.image}
               alt="main"
               className="w-full h-full object-cover"
             />
@@ -30,8 +31,16 @@ const GalleryDetail = () => {
             {selectedData.images.map((item, index) => (
               <div
                 key={index}
-                className="w-[120px] h-[90px] md:w-[213px] md:h-[170px] flex-shrink-0 cursor-pointer"
-                onClick={() => setSelectedImage(item)}
+                className={`w-[120px] h-[90px] md:w-[213px] md:h-[170px] flex-shrink-0 cursor-pointer ${
+                  selectedImage.index === index &&
+                  "border-[3px] border-[#9C824A] opacity-80"
+                }`}
+                onClick={() =>
+                  setSelectedImage({
+                    image: item,
+                    index: index,
+                  })
+                }
               >
                 <img
                   src={item}
