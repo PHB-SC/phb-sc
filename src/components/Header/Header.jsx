@@ -23,7 +23,7 @@ const Header = () => {
             show ? "flex" : "hidden"
           } md:gap-6`}
         >
-          <a href="/" className="text-sm md:text-base cursor-pointer">
+          <a href="/phb-sc/" className="text-sm md:text-base cursor-pointer">
             BERANDA
           </a>
           <a className="text-sm md:text-base cursor-pointer">PERTANDINGAN</a>
