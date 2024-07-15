@@ -14,14 +14,6 @@ const Header = () => {
     setShow(!show);
   };
 
-  const handleScrollTo = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setShow(false); // Close the menu if it's open on mobile
-  };
-
   return (
     <div className="flex flex-row justify-between items-center py-4 px-6 md:py-4 md:px-16 bg-red-600">
       <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
@@ -41,35 +33,30 @@ const Header = () => {
         >
           <a
             href={pathname === "" ? "#heading" : "/phb-sc/"}
-            onClick={() => handleScrollTo("heading")}
             className="text-sm md:text-base cursor-pointer"
           >
             HEADLINE
           </a>
           <a
             href={pathname === "" ? "#pemain" : "/phb-sc/"}
-            onClick={() => handleScrollTo("pemain")}
             className="text-sm md:text-base cursor-pointer"
           >
             TIM
           </a>
           <a
             href={pathname === "" ? "#jersey" : "/phb-sc/"}
-            onClick={() => handleScrollTo("jersey")}
             className="text-sm md:text-base cursor-pointer"
           >
             JERSEY
           </a>
           <a
             href={pathname === "" ? "#contact" : "/phb-sc/"}
-            onClick={() => handleScrollTo("contact")}
             className="text-sm md:text-base cursor-pointer"
           >
             KONTAK
           </a>
           <a
             href={pathname === "" ? "#gallery" : "/phb-sc/"}
-            onClick={() => handleScrollTo("gallery")}
             className="text-sm md:text-base cursor-pointer"
           >
             GALLERY
