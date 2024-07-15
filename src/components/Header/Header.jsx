@@ -2,9 +2,25 @@ import React from "react";
 import logoPHB from "../../assets/logo.png";
 import tagLine from "../../assets/tagline.png";
 import { HiOutlineMenu } from "react-icons/hi";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = React.useState(false);
+  const location = useLocation();
+
+  const pathname = location.pathname.split("/").pop();
+
+  const handleToggle = () => {
+    setShow(!show);
+  };
+
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setShow(false); // Close the menu if it's open on mobile
+  };
 
   return (
     <div className="flex flex-row justify-between items-center py-4 px-6 md:py-4 md:px-16 bg-red-600">
@@ -15,7 +31,7 @@ const Header = () => {
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-white font-semibold my-4 md:my-0">
         <HiOutlineMenu
           className="text-2xl cursor-pointer md:hidden"
-          onClick={() => setShow(!show)}
+          onClick={handleToggle}
         />
 
         <div
@@ -23,13 +39,41 @@ const Header = () => {
             show ? "flex" : "hidden"
           } md:gap-6`}
         >
-          <a href="/phb-sc/" className="text-sm md:text-base cursor-pointer">
-            BERANDA
+          <a
+            href={pathname === "" ? "#heading" : "/phb-sc/"}
+            onClick={() => handleScrollTo("heading")}
+            className="text-sm md:text-base cursor-pointer"
+          >
+            HEADLINE
           </a>
-          <a className="text-sm md:text-base cursor-pointer">PERTANDINGAN</a>
-          <a className="text-sm md:text-base cursor-pointer">TIM</a>
-          <a className="text-sm md:text-base cursor-pointer">KONTAK</a>
-          <a className="text-sm md:text-base cursor-pointer">GALLERY</a>
+          <a
+            href={pathname === "" ? "#pemain" : "/phb-sc/"}
+            onClick={() => handleScrollTo("pemain")}
+            className="text-sm md:text-base cursor-pointer"
+          >
+            TIM
+          </a>
+          <a
+            href={pathname === "" ? "#jersey" : "/phb-sc/"}
+            onClick={() => handleScrollTo("jersey")}
+            className="text-sm md:text-base cursor-pointer"
+          >
+            JERSEY
+          </a>
+          <a
+            href={pathname === "" ? "#contact" : "/phb-sc/"}
+            onClick={() => handleScrollTo("contact")}
+            className="text-sm md:text-base cursor-pointer"
+          >
+            KONTAK
+          </a>
+          <a
+            href={pathname === "" ? "#gallery" : "/phb-sc/"}
+            onClick={() => handleScrollTo("gallery")}
+            className="text-sm md:text-base cursor-pointer"
+          >
+            GALLERY
+          </a>
         </div>
       </div>
 

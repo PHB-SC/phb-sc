@@ -5,7 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 
 const Contact = () => {
   return (
-    <div className="py-16 px-4 md:py-[200px] md:px-8 flex flex-col md:flex-row gap-8 md:gap-[100px] items-center">
+    <div className="py-16 px-4 md:py-[100px] md:px-8 flex flex-col md:flex-row gap-8 md:gap-[100px] items-center">
       <div className="w-full md:w-1/2 h-64 md:h-[300px] bg-red-50 rounded-r-full overflow-hidden">
         <img
           src={foto}
