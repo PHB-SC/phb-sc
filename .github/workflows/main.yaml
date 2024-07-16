@@ -27,7 +27,7 @@ jobs:
         with:
           server: ftp.pemudaharapanbangsa.my.id
           username: fildan@pemudaharapanbangsa.my.id
-          password: ${{ secrets.ftp_password }}
+          password: pidansyah16
           server-dir: /public_html/
           exclude: |
             **/.git**
