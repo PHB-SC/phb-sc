@@ -15,11 +15,11 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center py-4 px-6 md:py-4 md:px-16 bg-red-600">
-      <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px]">
+    <div className="flex flex-row justify-between items-center py-4 px-6 md:py-6 md:px-16 bg-red-600 sticky top-0 z-[999]">
+      <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] absolute top-1">
         <img src={logoPHB} alt="logo" className="w-full h-full" />
       </div>
-
+      <div />
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-white font-semibold my-4 md:my-0">
         <HiOutlineMenu
           className="text-2xl cursor-pointer md:hidden"
@@ -32,31 +32,31 @@ const Header = () => {
           } md:gap-6`}
         >
           <a
-            href={pathname === "" ? "#heading" : "/phb-sc/"}
+            href={pathname === "" ? "#heading" : "/"}
             className="text-sm md:text-base cursor-pointer"
           >
             HEADLINE
           </a>
           <a
-            href={pathname === "" ? "#pemain" : "/phb-sc/"}
+            href={pathname === "" ? "#pemain" : "/"}
             className="text-sm md:text-base cursor-pointer"
           >
             TIM
           </a>
           <a
-            href={pathname === "" ? "#jersey" : "/phb-sc/"}
+            href={pathname === "" ? "#jersey" : "/"}
             className="text-sm md:text-base cursor-pointer"
           >
             JERSEY
           </a>
           <a
-            href={pathname === "" ? "#contact" : "/phb-sc/"}
+            href={pathname === "" ? "#contact" : "/"}
             className="text-sm md:text-base cursor-pointer"
           >
             KONTAK
           </a>
           <a
-            href={pathname === "" ? "#gallery" : "/phb-sc/"}
+            href={pathname === "" ? "#gallery" : "/"}
             className="text-sm md:text-base cursor-pointer"
           >
             GALLERY
@@ -64,7 +64,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-[100px] h-[80px] md:w-[150px] md:h-[120px]">
+      <div />
+      <div className="absolute w-[100px] h-[80px] md:w-[150px] md:h-[120px]  right-[20px] top-0 md:top-[-30px]">
         <img src={tagLine} alt="tagline" className="w-full h-full" />
       </div>
     </div>

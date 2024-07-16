@@ -7,26 +7,41 @@ import {
   Heading,
   Jersey,
   Pemain,
+  withAnimation,
 } from "../../components";
+import banner from "../../assets/banner_phb.png";
+
+const AnimatedHeading = withAnimation(Heading);
+const AnimatedPemain = withAnimation(Pemain);
+const AnimatedJersey = withAnimation(Jersey);
+const AnimatedContact = withAnimation(Contact);
+const AnimatedGallery = withAnimation(Gallery);
 
 const Home = () => {
   return (
-    <div className="h-full ">
+    <div className="h-full">
       <Header />
+      <div className="w-full h-[300px] md:h-[800px]">
+        <img
+          src={banner}
+          alt="banner"
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
       <div id="heading">
-        <Heading />
+        <AnimatedHeading />
       </div>
       <div id="pemain">
-        <Pemain />
+        <AnimatedPemain />
       </div>
       <div id="jersey">
-        <Jersey />
+        <AnimatedJersey />
       </div>
       <div id="contact">
-        <Contact />
+        <AnimatedContact />
       </div>
       <div id="gallery">
-        <Gallery />
+        <AnimatedGallery />
       </div>
       <Footer />
     </div>
