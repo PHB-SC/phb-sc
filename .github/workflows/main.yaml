@@ -25,8 +25,8 @@ jobs:
       - name: Deploy to Cpanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER  }}
-          username: ${{ secrets.FTP_USERNAME  }}
+          server: ftp.pemudaharapanbangsa.my.id
+          username: fildansyah@pemudaharapanbangsa.my.id
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/
           exclude: |
