@@ -17,7 +17,10 @@ const Gallery = () => {
             key={index}
             {...item}
             length={item.images.length}
-            onClick={() => navigate(`/gallery/${item.id}`)}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate(`/gallery/${item.id}`);
+            }}
           />
         ))}
       </div>
