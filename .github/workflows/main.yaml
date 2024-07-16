@@ -26,8 +26,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.pemudaharapanbangsa.my.id
-          username: fildansyah@pemudaharapanbangsa.my.id
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: fildan@pemudaharapanbangsa.my.id
+          password: ${{ secrets.ftp_password }}
           server-dir: /public_html/
           exclude: |
             **/.git**
