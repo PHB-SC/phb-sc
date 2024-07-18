@@ -11,17 +11,17 @@ import {
 } from "../../components";
 import banner from "../../assets/banner_phb.png";
 
-const AnimatedHeading = withAnimation(Heading);
-const AnimatedPemain = withAnimation(Pemain);
-const AnimatedJersey = withAnimation(Jersey);
-const AnimatedContact = withAnimation(Contact);
-const AnimatedGallery = withAnimation(Gallery);
+const AnimatedHeading = withAnimation(Heading, "left");
+const AnimatedPemain = withAnimation(Pemain, "right");
+const AnimatedJersey = withAnimation(Jersey, "left");
+const AnimatedContact = withAnimation(Contact, "right");
+const AnimatedGallery = withAnimation(Gallery, "left");
 
 const Home = () => {
   return (
-    <div className="h-full">
+    <div className="h-full overflow-hidden">
       <Header />
-      <div className="w-full h-[300px] md:h-[800px]">
+      <div className="w-full bg-red-600  h-[300px] md:h-[800px]">
         <img
           src={banner}
           alt="banner"
@@ -31,18 +31,19 @@ const Home = () => {
       <div id="heading">
         <AnimatedHeading />
       </div>
-      <div id="pemain">
+      <div id="pemain" className="bg-white">
         <AnimatedPemain />
       </div>
-      <div id="jersey">
+      <div id="jersey" className="bg-white">
         <AnimatedJersey />
       </div>
-      <div id="contact">
+      <div id="contact" className="bg-white">
         <AnimatedContact />
       </div>
-      <div id="gallery">
+      <div id="gallery" className="bg-white">
         <AnimatedGallery />
       </div>
+
       <Footer />
     </div>
   );

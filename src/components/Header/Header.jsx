@@ -16,7 +16,10 @@ const Header = () => {
 
   return (
     <div className="flex flex-row justify-between items-center py-4 px-6 md:py-6 md:px-16 bg-red-600 sticky top-0 z-[999]">
-      <div className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] absolute top-1">
+      <div
+        onClick={() => window.open("/")}
+        className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] absolute top-1 cursor-pointer"
+      >
         <img src={logoPHB} alt="logo" className="w-full h-full" />
       </div>
       <div />
