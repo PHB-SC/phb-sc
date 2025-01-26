@@ -15,17 +15,23 @@ const Footer = () => {
         />
         <div className="flex flex-row px-[20px] md:px-[200px] justify-between items-center h-full">
           <p className="text-white text-xs md:text-lg">
-            © 2024 Pemuda Harapan Bangsa
+            © 2025 Pemuda Olahrga SC
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <p className="text-white text-xs md:text-lg">Contact us: </p>
             <div
-              onClick={() => window.open("https://www.instagram.com/phb.sc/")}
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/pemudaolahraga.sc?igsh=MWJ6NGU5ZzEwcGcyYw==",
+                )
+              }
               className="flex flex-row items-center gap-1 cursor-pointer"
             >
               <BsInstagram size={20} className="text-white" />
-              <p className="text-white text-xs md:text-lg">@PHB.SC</p>
+              <p className="text-white text-xs md:text-lg">
+                @pemudaolahraga.sc
+              </p>
             </div>
           </div>
         </div>
