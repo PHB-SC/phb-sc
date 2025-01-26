@@ -4,14 +4,14 @@ import {
   Footer,
   Gallery,
   Header,
-  Heading,
+  // Heading,
   Jersey,
   Pemain,
   withAnimation,
 } from "../../components";
-import banner from "../../assets/banner_phb.png";
+import banner from "../../assets/BANNER_POSC.jpg";
 
-const AnimatedHeading = withAnimation(Heading, "left");
+// const AnimatedHeading = withAnimation(Heading, "left");
 const AnimatedPemain = withAnimation(Pemain, "right");
 const AnimatedJersey = withAnimation(Jersey, "left");
 const AnimatedContact = withAnimation(Contact, "right");
@@ -21,16 +21,16 @@ const Home = () => {
   return (
     <div className="h-full overflow-hidden">
       <Header />
-      <div className="w-full bg-red-600  h-[300px] md:h-[800px]">
+      <div className="w-full bg-primary  h-[300px] md:h-[800px]">
         <img
           src={banner}
           alt="banner"
           className="w-full h-full object-cover object-top"
         />
       </div>
-      <div id="heading">
+      {/* <div id="heading">
         <AnimatedHeading />
-      </div>
+      </div> */}
       <div id="pemain" className="bg-white">
         <AnimatedPemain />
       </div>

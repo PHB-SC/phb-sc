@@ -7,7 +7,7 @@ const Gallery = () => {
   const navigate = useNavigate();
   return (
     <div className="py-8 px-4 md:py-8 md:px-14 flex flex-col gap-10">
-      <p className="text-red-600 font-bold text-xl md:text-[40px] text-center">
+      <p className="text-primary font-bold text-xl md:text-[40px] text-center">
         PHB GALLERY
       </p>
 

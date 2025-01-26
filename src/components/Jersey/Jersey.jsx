@@ -1,12 +1,12 @@
 import React from "react";
-import jerseyPemain from "../../assets/jersey/jersey_phb.jpg";
-import jerseyKiper from "../../assets/jersey/jersey_kiper.jpg";
+import jerseyPemain from "../../assets/jersey/jersey_posc_2025.png";
+import jerseyKiper from "../../assets/jersey/jersey_gk_2025.png";
 
 const Jersey = () => {
   return (
     <div className="py-8 px-4 md:py-8 md:px-14 flex flex-col gap-8">
-      <p className="text-red-600 font-bold text-xl md:text-2xl">
-        PHB SC KIT 2024/2025
+      <p className="text-primary font-bold text-xl md:text-2xl">
+        POSC KIT 2024/2025
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[40px]">
         <div className="flex flex-col gap-5 md:gap-[20px]">
@@ -17,8 +17,8 @@ const Jersey = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-red-600 font-bold text-center md:text-left">
-            PHB SC Primary Jersey 2024 - Red
+          <p className="text-primary font-bold text-center md:text-left">
+            POSC Primary Jersey 2024 - Red
           </p>
         </div>
 
@@ -30,8 +30,8 @@ const Jersey = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-red-600 font-bold text-center md:text-left">
-            PHB SC Keeper Jersey 2024 - Yellow
+          <p className="text-primary font-bold text-center md:text-left">
+            POSC Keeper Jersey 2024 - Yellow
           </p>
         </div>
       </div>

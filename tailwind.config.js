@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         sans: ["Arimo", "Inter", "system-ui", "sans-serif"],
       },
+      colors: {
+        primary: "#091e38",
+        secondary: "#621314",
+      },
       translate: {
         10: "2.5rem",
       },

@@ -1,22 +1,28 @@
 import React from "react";
-import { pemain } from "../../mock/pemain";
+// import { pemain } from "../../mock/pemain";
 import fulltim from "../../assets/pemain/fulltim.jpg";
+import batik from "../../assets/batik.png";
 
 const Pemain = () => {
   return (
     <div className="py-8 px-4 md:py-8 md:px-14 flex flex-col gap-8">
-      <p className="text-red-600 font-bold text-xl md:text-2xl">
-        Tim Utama Pemuda Harapan Bangsa SC
+      <p className="text-primary font-bold text-xl md:text-2xl">
+        Tim Utama Pemuda Olahraga SC
       </p>
       <div className="flex flex-col px-6 md:px-8 gap-6 md:gap-8">
-        <div className="w-full bg-red-600 h-64 md:h-[800px]">
+        <div
+          style={{
+            backgroundImage: `url(${batik})`,
+          }}
+          className="w-full  h-64 md:h-[800px]"
+        >
           <img
             src={fulltim}
             alt="Tim Pemuda Harapan Bangsa"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
         </div>
-        <div className="flex gap-6 md:gap-[68px] items-center justify-between overflow-x-auto">
+        {/* <div className="flex gap-6 md:gap-[68px] items-center justify-between overflow-x-auto">
           {pemain.map((pemain) => (
             <div
               key={pemain.id}
@@ -42,7 +48,7 @@ const Pemain = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

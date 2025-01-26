@@ -17,7 +17,7 @@ const GalleryCard = ({
     >
       <div className="relative">
         <img src={thumbnail} alt="Match" className="w-full h-48 object-cover" />
-        <div className="absolute top-0 left-0 m-2 bg-red-600 text-white rounded-full px-2 py-1 text-xs items-center flex">
+        <div className="absolute top-0 left-0 m-2 bg-primary text-white rounded-full px-2 py-1 text-xs items-center flex">
           <BiImage size={18} className="inline-block w-4 h-4 mr-1" />
           <span>{length}</span>
         </div>

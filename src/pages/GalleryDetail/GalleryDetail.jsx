@@ -27,7 +27,7 @@ const GalleryDetail = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-4 md:p-[16px] bg-red-600 flex flex-row gap-4 md:gap-[30px] overflow-x-auto">
+          <div className="p-4 md:p-[16px] bg-primary flex flex-row gap-4 md:gap-[30px] overflow-x-auto">
             {selectedData.images.map((item, index) => (
               <div
                 key={index}
@@ -53,7 +53,7 @@ const GalleryDetail = () => {
         </div>
 
         <div className="flex flex-col gap-3 md:gap-[15px] justify-center">
-          <h1 className="text-xl md:text-2xl font-bold text-red-600">
+          <h1 className="text-xl md:text-2xl font-bold text-primary">
             {selectedData.title}
           </h1>
           <p className="text-gray-600 font-semibold">{selectedData.date}</p>
