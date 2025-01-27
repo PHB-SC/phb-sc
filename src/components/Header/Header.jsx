@@ -1,6 +1,6 @@
 import React from "react";
 import logoPHB from "../../assets/logo.png";
-import tagLine from "../../assets/tagline.png";
+import sponsor from "../../assets/dafema.png";
 import { HiOutlineMenu } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 
@@ -69,8 +69,8 @@ const Header = () => {
         </div>
 
         <div />
-        <div className="absolute w-[100px] h-[80px] md:w-[150px] md:h-[120px]  right-[20px] top-0 md:top-[-30px]">
-          <img src={tagLine} alt="tagline" className="w-full h-full" />
+        <div className="absolute w-[150px] h-[50px] md:w-52 md:h-16  right-1 top-5 md:top-1">
+          <img src={sponsor} alt="tagline" className="w-full h-full" />
         </div>
       </div>
       <div className="w-full h-[5px] bg-secondary"></div>
