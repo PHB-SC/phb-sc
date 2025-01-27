@@ -8,7 +8,7 @@ const Gallery = () => {
   return (
     <div className="py-8 px-4 md:py-8 md:px-14 flex flex-col gap-10">
       <p className="text-primary font-bold text-xl md:text-[40px] text-center">
-        PHB GALLERY
+        POSC GALLERY
       </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-[20px] md:gap-[40px]">

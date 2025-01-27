@@ -6,7 +6,7 @@ const Jersey = () => {
   return (
     <div className="py-8 px-4 md:py-8 md:px-14 flex flex-col gap-8">
       <p className="text-primary font-bold text-xl md:text-2xl">
-        POSC KIT 2024/2025
+        POSC KIT 2025/2026
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[40px]">
         <div className="flex flex-col gap-5 md:gap-[20px]">
@@ -18,7 +18,8 @@ const Jersey = () => {
             />
           </div>
           <p className="text-primary font-bold text-center md:text-left">
-            POSC Primary Jersey 2024 - Red
+            POSC Primary Jersey 2025 - Blue &{" "}
+            <span className="text-secondary">Red</span>
           </p>
         </div>
 
@@ -31,7 +32,8 @@ const Jersey = () => {
             />
           </div>
           <p className="text-primary font-bold text-center md:text-left">
-            POSC Keeper Jersey 2024 - Yellow
+            POSC Keeper Jersey 2025 - <span className="text-black">Black</span>{" "}
+            & <span className="text-gray-700">Grey</span>
           </p>
         </div>
       </div>

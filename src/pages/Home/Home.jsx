@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="h-full overflow-hidden">
       <Header />
-      <div className="w-full bg-primary  h-[300px] md:h-[800px]">
+      <div className="w-full bg-primary">
         <img
           src={banner}
           alt="banner"

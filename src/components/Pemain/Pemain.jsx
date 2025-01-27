@@ -19,7 +19,7 @@ const Pemain = () => {
           <img
             src={fulltim}
             alt="Tim Pemuda Harapan Bangsa"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover md:object-[60%_40%]"
           />
         </div>
         {/* <div className="flex gap-6 md:gap-[68px] items-center justify-between overflow-x-auto">
