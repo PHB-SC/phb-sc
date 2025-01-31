@@ -7,3 +7,4 @@ export * from "./Contact";
 export * from "./GalleryCard";
 export * from "./Gallery";
 export * from "./WithAnimation";
+export * from "./event";

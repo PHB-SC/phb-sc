@@ -8,6 +8,7 @@ import {
   Jersey,
   Pemain,
   withAnimation,
+  EventPoster,
 } from "../../components";
 import banner from "../../assets/BANNER_POSC.jpg";
 
@@ -16,6 +17,7 @@ const AnimatedPemain = withAnimation(Pemain, "right");
 const AnimatedJersey = withAnimation(Jersey, "left");
 const AnimatedContact = withAnimation(Contact, "right");
 const AnimatedGallery = withAnimation(Gallery, "left");
+const AnimatedPoster = withAnimation(EventPoster, "left");
 
 const Home = () => {
   return (
@@ -31,6 +33,9 @@ const Home = () => {
       {/* <div id="heading">
         <AnimatedHeading />
       </div> */}
+      <div id="poster" className="bg-primary">
+        <AnimatedPoster />
+      </div>
       <div id="pemain" className="bg-white">
         <AnimatedPemain />
       </div>
